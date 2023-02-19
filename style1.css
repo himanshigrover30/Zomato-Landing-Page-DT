@@ -16,7 +16,6 @@
     height: 70px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -55,7 +54,6 @@
     width: 100%;
     height: 350px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -75,7 +73,6 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 
@@ -96,13 +93,20 @@
     font-size: 16px;
     padding-left: 10px;
 }
-
+/* meida queries for  */
+@media only screen and (max-width:500px){
+    #navigationBar .navbar #navLinks a i{
+        display: block;
+    }
+    #navigationBar .navbar #navLinks a{
+        display: none;
+    }
+}
 /* Online Order and Dining Section */
 #placeOrder{
     width: 100%;
     height:300px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: rows;
     justify-content: center;
     align-items: center;
@@ -126,7 +130,6 @@
 #placeOrder .orderOnline .orderOnlineText{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     /* align-items: center; */
     bottom: 0;
     left:0;
@@ -181,7 +184,6 @@
     width: 100%;
     height:500px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -198,7 +200,6 @@
     width: 80%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 16px;
     font-weight:300;
@@ -209,7 +210,6 @@
 }
 #collection_main #collection_images{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     width: 80%;
     height:350px;
@@ -249,7 +249,6 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-end;
     padding: 5px 15px;
 }
@@ -289,7 +288,6 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-end;
     padding: 5px 15px;
 }
@@ -329,7 +327,6 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-end;
     padding: 5px 15px;
 }
@@ -369,7 +366,6 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-end;
     padding: 5px 15px;
 }
@@ -382,7 +378,6 @@
     height:500px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
     gap:30px;
@@ -395,7 +390,6 @@
 }
 #popular_Localities #localities_main{
     display: flex;
-    flex-wrap: wrap;
     width: 80%;
     height: auto;
     flex-direction: row;
@@ -408,7 +402,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -425,7 +418,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -443,7 +435,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -462,7 +453,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -479,7 +469,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -498,7 +487,6 @@
     border:1px solid rgb(218, 218, 218);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
     align-items: center;
@@ -515,7 +503,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -532,7 +519,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
@@ -550,7 +536,6 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(218, 218, 218);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 15px;
@@ -593,7 +578,6 @@
     height:450px;
     background-color: rgb(255, 248, 241);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -605,7 +589,6 @@
 }
 #getTheApp #getTheApp_section2{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
@@ -618,7 +601,6 @@
 }
 #getTheApp #getTheApp_section2 .getTheApp_form{
     display:flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
 }
@@ -629,7 +611,6 @@
 }
 #getTheApp #getTheApp_section2 .getTheApp_form .getTheApp_Email_getLink{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     gap:15px;
 }
@@ -668,7 +649,6 @@
     width:100%;
     height: 400px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -683,7 +663,6 @@
     width: 80%;
     height: auto;
     display:flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
     margin-top: 20px;
@@ -693,7 +672,6 @@
     height:80px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -708,7 +686,6 @@
     height:80px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -723,7 +700,6 @@
     height:80px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -740,7 +716,6 @@
     height:450px;
     background-color:rgb(243, 243, 243);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -930,4 +905,3 @@
     /* border-top:1px solid gray; */
     padding:0 2px;
 }
-/* media queries for whole project */
