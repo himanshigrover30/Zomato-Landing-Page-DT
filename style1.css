@@ -93,13 +93,39 @@
     font-size: 16px;
     padding-left: 10px;
 }
-/* meida queries for  */
-@media only screen and (max-width:500px){
+/* meida queries for Navigation bar */
+@media only screen and (max-width:1000px){
     #navigationBar .navbar #navLinks a i{
         display: block;
     }
     #navigationBar .navbar #navLinks a{
         display: none;
+    }
+    #navigationBar #zomato_banner #banner_paragraph{
+        font-size:35px;
+        text-align: center;
+    }
+    #navigationBar #zomato_banner #form_banner{
+        width:600px;
+        height:60px;
+    }
+}
+@media (max-width:600px) and (min-width:500px){
+    #navigationBar #zomato_banner #form_banner{
+        width:500px;
+        height:60px;
+    }
+}
+@media (max-width:500px) and (min-width:400px){
+    #navigationBar #zomato_banner #form_banner{
+        width:400px;
+        height:60px;
+    }
+}
+@media (max-width:400px) and (min-width:300px){
+    #navigationBar #zomato_banner #form_banner{
+        width:300px;
+        height:60px;
     }
 }
 /* Online Order and Dining Section */
@@ -107,6 +133,7 @@
     width: 100%;
     height:300px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: rows;
     justify-content: center;
     align-items: center;
@@ -119,29 +146,25 @@
     width:80vh;
     height: 250px;
     border: 2px solid rgb(225, 224, 224);
-    border-radius: 15px;
-    background: url("images/item1.png");    
-    background-size: 100% 68%;
-    background-repeat:no-repeat;
     position: relative;
-    background-color: white;
-    transition: all 0.2s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 1s ease-in;
+}
+#placeOrder .orderOnline img{
+    width:100%;
+    height: 70%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
 }
 #placeOrder .orderOnline .orderOnlineText{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    bottom: 0;
-    left:0;
     position: absolute;
-    padding:13px 10px;
-}
-#placeOrder .orderOnline .orderOnlineText .heading_orderOnline{
-    font-weight: normal;
-    font-size: 18px;
-}
-#placeOrder .orderOnline .orderOnlineText .para_orderOnline{
-    color: rgb(124, 124, 124);
+    bottom:0;
+    left:0;
+    padding:10px 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
 #placeOrder .orderOnline:hover{
     transform: scale(1.05);
@@ -150,29 +173,27 @@
     width:80vh;
     height: 250px;
     border: 2px solid rgb(225, 224, 224);
-    border-radius: 15px;
-    background: url("images/item2.png");    
-    background-size: 100% 68%;
-    background-repeat:no-repeat;
     position: relative;
-    background-color: white;
-    transition: all 0.2s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 1s ease-in;
 }
-#placeOrder .dining .diningText{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    bottom: 0;
-    left:0;
+#placeOrder .dining img{
+    width:100%;
+    height: 70%;
     position: absolute;
-    padding:13px 10px;
+    object-fit: cover;
+    object-position: center;
 }
-#placeOrder .dining .diningText .heading_dining{
-    font-weight: normal;
-    font-size: 18px;
-}
-#placeOrder .dining .diningText .para_dining{
-    color: rgb(124, 124, 124);
+
+#placeOrder .dining .diningText{
+
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding:10px 20px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #placeOrder .dining:hover{
@@ -188,6 +209,7 @@
     justify-content: center;
     align-items: center;
     gap: 1px;
+    overflow: hidden;
 }
 #collection_main #collction_heading{
     width:80%;
@@ -210,9 +232,10 @@
 }
 #collection_main #collection_images{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 80%;
-    height:350px;
+    height:auto;
     /* gap: 15px; */
     margin-top:30px;
     justify-content: space-between;
@@ -372,11 +395,19 @@
 #collection_main #collection_images .collectionimg4 .content h4{
     font-weight: 400;
 }
+/* collection section - media queries */
+@media only screen and (max-width:500px){
+    #collection_main #para_collections p a{
+        display: none;
+    }
+}
+
 /* Popular Localities */
 #popular_Localities{
     width:100%;
     height:500px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -578,6 +609,7 @@
     height:450px;
     background-color: rgb(255, 248, 241);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -607,7 +639,7 @@
 #getTheApp #getTheApp_section2 .getTheApp_form .getTheApp_radioButtons{
     font-size: 18px;
     display: flex;
-    gap: 15px;;
+    gap: 15px;
 }
 #getTheApp #getTheApp_section2 .getTheApp_form .getTheApp_Email_getLink{
     display: flex;
@@ -642,6 +674,13 @@
 #getTheApp .getTheApp_downloadButtons .button_appStore img{
     width:130px;
     height: 40px;
+}
+
+/* get the app media query */
+@media only screen and (max-width:1000px) {
+    #getTheApp #getTheApp_section1,#getTheApp #getTheApp_section2{
+        flex:1;
+    }
 }
 
 /* Explore Options near me */
@@ -760,6 +799,7 @@
     width: 80%;
     height: 250px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between;
 }
