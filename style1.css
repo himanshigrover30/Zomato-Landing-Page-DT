@@ -33,9 +33,10 @@
     font-size: 20px;
     cursor: pointer;
 }
-#navigationBar .navbar #navLinks a i{
+#navigationBar .navbar #navLinks #icon_user{
     border:1px solid white;
     border-radius: 50%;
+    color: white;
     padding:5px;
     display: none;
 }
@@ -95,7 +96,10 @@
 }
 /* meida queries for Navigation bar */
 @media only screen and (max-width:1000px){
-    #navigationBar .navbar #navLinks a{
+    #navigationBar .navbar #navLinks #icon_user{
+        display: flex;
+    }
+    #navLinks > a{
         display: none;
     }
     #navigationBar #zomato_banner #banner_paragraph{
@@ -120,11 +124,11 @@
     }
 }
 @media (max-width:400px) and (min-width:300px){
-    
     #navigationBar #zomato_banner #form_banner{
         width:300px;
         height:60px;
     }
+
 }
 /* Online Order and Dining Section */
 #placeOrder{
